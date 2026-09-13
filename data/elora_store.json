@@ -1,0 +1,838 @@
+{
+  "customers": [
+    {
+      "id": "cust_1789285505317_hptd7",
+      "full_name": "Aarav Mehra",
+      "email": "aarav.mehra@example.com",
+      "phone": "9820011223",
+      "total_orders": 1,
+      "total_spent": 1999,
+      "last_order_at": "2026-09-13T07:45:07.810Z",
+      "addresses": [
+        {
+          "address_line1": "Penthouse 18B, Altamount Luxury Residences",
+          "address_line2": "Altamount Road, Cumballa Hill",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "postal_code": "400026",
+          "country": "India",
+          "landmark": "Near Antilia"
+        }
+      ],
+      "created_at": "2026-09-13T07:45:05.317Z",
+      "updated_at": "2026-09-13T07:45:07.810Z"
+    },
+    {
+      "id": "cust_1789285864929_z8na0",
+      "full_name": "Devika Singhania",
+      "email": "devika.singhania@luxury.in",
+      "phone": "9820099887",
+      "total_orders": 1,
+      "total_spent": 1999,
+      "last_order_at": "2026-09-13T07:51:06.873Z",
+      "addresses": [
+        {
+          "address_line1": "Flat 42B, Sea Face Mansions, Worli",
+          "address_line2": "",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "postal_code": "400018",
+          "country": "India",
+          "landmark": ""
+        }
+      ],
+      "created_at": "2026-09-13T07:51:04.929Z",
+      "updated_at": "2026-09-13T07:51:14.585Z"
+    },
+    {
+      "id": "cust_1789286261459_5gwzi",
+      "full_name": "Aarav Mehra",
+      "email": "aarav.mehra@atelier.com",
+      "phone": "9988776655",
+      "total_orders": 1,
+      "total_spent": 1999,
+      "last_order_at": "2026-09-13T07:57:41.487Z",
+      "addresses": [
+        {
+          "address_line1": "Penthouse 18, Gulmohar Enclave",
+          "address_line2": "",
+          "city": "New Delhi",
+          "state": "Delhi",
+          "postal_code": "110049",
+          "country": "India",
+          "landmark": ""
+        }
+      ],
+      "created_at": "2026-09-13T07:57:41.459Z",
+      "updated_at": "2026-09-13T07:57:41.487Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_1789286261461_x96eq",
+      "order_number": "ELR-2026-000004",
+      "customer_id": "cust_1789286261459_5gwzi",
+      "customer_name": "Aarav Mehra",
+      "customer_email": "aarav.mehra@atelier.com",
+      "customer_phone": "9988776655",
+      "shipping_address": "Penthouse 18, Gulmohar Enclave",
+      "shipping_city": "New Delhi",
+      "shipping_state": "Delhi",
+      "shipping_postal_code": "110049",
+      "shipping_country": "India",
+      "subtotal": 1999,
+      "discount": 0,
+      "shipping_fee": 0,
+      "tax": 0,
+      "total": 1999,
+      "currency": "INR",
+      "payment_status": "PAID",
+      "order_status": "CONFIRMED",
+      "shipping_status": "PENDING",
+      "created_at": "2026-09-13T07:57:41.461Z",
+      "updated_at": "2026-09-13T07:57:41.487Z",
+      "items": [
+        {
+          "id": "item_1789286261461_dei1",
+          "order_id": "ord_1789286261461_x96eq",
+          "product_id": "elora-noir",
+          "product_name": "NOIR",
+          "size_ml": "100ml",
+          "sku": "ELR-NOI-100ML",
+          "quantity": 1,
+          "unit_price": 1999,
+          "total": 1999,
+          "created_at": "2026-09-13T07:57:41.461Z"
+        }
+      ],
+      "payments": [
+        {
+          "id": "pay_1789286261487_9zhp",
+          "order_id": "ord_1789286261461_x96eq",
+          "provider": "CASHFREE",
+          "provider_order_id": "ELR_2026_000004_1789286261461",
+          "provider_payment_id": "cf_pay_sim_1789286261486",
+          "amount": 1999,
+          "currency": "INR",
+          "status": "PAID",
+          "payment_method": "UPI / NetBanking (Sandbox Simulated)",
+          "payment_response": {
+            "simulated": true,
+            "status": "PAID"
+          },
+          "created_at": "2026-09-13T07:57:41.487Z",
+          "updated_at": "2026-09-13T07:57:41.487Z"
+        }
+      ],
+      "shipments": [],
+      "history": [
+        {
+          "id": "hist_1789286261461",
+          "order_id": "ord_1789286261461_x96eq",
+          "status": "PENDING",
+          "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+          "created_at": "2026-09-13T07:57:41.461Z"
+        },
+        {
+          "id": "hist_1789286261487",
+          "order_id": "ord_1789286261461_x96eq",
+          "status": "CONFIRMED",
+          "notes": "Payment confirmed via Cashfree. Ref: cf_pay_sim_1789286261486",
+          "created_at": "2026-09-13T07:57:41.487Z"
+        }
+      ],
+      "cashfree_order_id": "ELR_2026_000004_1789286261461"
+    },
+    {
+      "id": "ord_1789285874586_o9ajb",
+      "order_number": "ELR-2026-000003",
+      "customer_id": "cust_1789285864929_z8na0",
+      "customer_name": "Devika Singhania",
+      "customer_email": "devika.singhania@luxury.in",
+      "customer_phone": "9820099887",
+      "shipping_address": "Flat 42B, Sea Face Mansions, Worli",
+      "shipping_city": "Mumbai",
+      "shipping_state": "Maharashtra",
+      "shipping_postal_code": "400018",
+      "shipping_country": "India",
+      "subtotal": 1499,
+      "discount": 0,
+      "shipping_fee": 0,
+      "tax": 0,
+      "total": 1499,
+      "currency": "INR",
+      "payment_status": "PENDING",
+      "order_status": "PENDING",
+      "shipping_status": "PENDING",
+      "created_at": "2026-09-13T07:51:14.586Z",
+      "updated_at": "2026-09-13T07:51:14.586Z",
+      "items": [
+        {
+          "id": "item_1789285874586_go16",
+          "order_id": "ord_1789285874586_o9ajb",
+          "product_id": "elora-aura",
+          "product_name": "AURA",
+          "size_ml": "100ml",
+          "sku": "ELR-AUR-100ML",
+          "quantity": 1,
+          "unit_price": 1499,
+          "total": 1499,
+          "created_at": "2026-09-13T07:51:14.586Z"
+        }
+      ],
+      "payments": [],
+      "shipments": [],
+      "history": [
+        {
+          "id": "hist_1789285874586",
+          "order_id": "ord_1789285874586_o9ajb",
+          "status": "PENDING",
+          "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+          "created_at": "2026-09-13T07:51:14.586Z"
+        }
+      ]
+    },
+    {
+      "id": "ord_1789285864930_h6m5r",
+      "order_number": "ELR-2026-000002",
+      "customer_id": "cust_1789285864929_z8na0",
+      "customer_name": "Devika Singhania",
+      "customer_email": "devika.singhania@luxury.in",
+      "customer_phone": "9820099887",
+      "shipping_address": "Flat 42B, Sea Face Mansions, Worli",
+      "shipping_city": "Mumbai",
+      "shipping_state": "Maharashtra",
+      "shipping_postal_code": "400018",
+      "shipping_country": "India",
+      "subtotal": 1999,
+      "discount": 0,
+      "shipping_fee": 0,
+      "tax": 0,
+      "total": 1999,
+      "currency": "INR",
+      "payment_status": "PAID",
+      "order_status": "CONFIRMED",
+      "shipping_status": "PENDING",
+      "created_at": "2026-09-13T07:51:04.931Z",
+      "updated_at": "2026-09-13T07:51:06.873Z",
+      "items": [
+        {
+          "id": "item_1789285864930_uoik",
+          "order_id": "ord_1789285864930_h6m5r",
+          "product_id": "elora-noir",
+          "product_name": "NOIR",
+          "size_ml": "100ml",
+          "sku": "ELR-NOI-100ML",
+          "quantity": 1,
+          "unit_price": 1999,
+          "total": 1999,
+          "created_at": "2026-09-13T07:51:04.931Z"
+        }
+      ],
+      "payments": [
+        {
+          "id": "pay_1789285866873_xrou",
+          "order_id": "ord_1789285864930_h6m5r",
+          "provider": "CASHFREE",
+          "provider_order_id": "ELR_2026_000002_1789285864931",
+          "provider_payment_id": "cf_pay_sim_1789285866872",
+          "amount": 1999,
+          "currency": "INR",
+          "status": "PAID",
+          "payment_method": "UPI / NetBanking (Sandbox Simulated)",
+          "payment_response": {
+            "simulated": true,
+            "status": "PAID"
+          },
+          "created_at": "2026-09-13T07:51:06.873Z",
+          "updated_at": "2026-09-13T07:51:06.873Z"
+        }
+      ],
+      "shipments": [],
+      "history": [
+        {
+          "id": "hist_1789285864931",
+          "order_id": "ord_1789285864930_h6m5r",
+          "status": "PENDING",
+          "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+          "created_at": "2026-09-13T07:51:04.931Z"
+        },
+        {
+          "id": "hist_1789285866873",
+          "order_id": "ord_1789285864930_h6m5r",
+          "status": "CONFIRMED",
+          "notes": "Payment confirmed via Cashfree. Ref: cf_pay_sim_1789285866872",
+          "created_at": "2026-09-13T07:51:06.873Z"
+        }
+      ],
+      "cashfree_order_id": "ELR_2026_000002_1789285864931"
+    },
+    {
+      "id": "ord_1789285505318_k2h24",
+      "order_number": "ELR-2026-000001",
+      "customer_id": "cust_1789285505317_hptd7",
+      "customer_name": "Aarav Mehra",
+      "customer_email": "aarav.mehra@example.com",
+      "customer_phone": "9820011223",
+      "shipping_address": "Penthouse 18B, Altamount Luxury Residences",
+      "shipping_address_line2": "Altamount Road, Cumballa Hill",
+      "shipping_city": "Mumbai",
+      "shipping_state": "Maharashtra",
+      "shipping_postal_code": "400026",
+      "shipping_country": "India",
+      "shipping_landmark": "Near Antilia",
+      "subtotal": 1999,
+      "discount": 0,
+      "shipping_fee": 0,
+      "tax": 0,
+      "total": 1999,
+      "currency": "INR",
+      "payment_status": "PAID",
+      "order_status": "PROCESSING",
+      "shipping_status": "READY_TO_SHIP",
+      "created_at": "2026-09-13T07:45:05.318Z",
+      "updated_at": "2026-09-13T07:45:12.997Z",
+      "items": [
+        {
+          "id": "item_1789285505318_qh07",
+          "order_id": "ord_1789285505318_k2h24",
+          "product_id": "elora-noir",
+          "product_name": "NOIR",
+          "size_ml": "100ml",
+          "sku": "ELR-NOI-100ML",
+          "quantity": 1,
+          "unit_price": 1999,
+          "total": 1999,
+          "created_at": "2026-09-13T07:45:05.318Z"
+        }
+      ],
+      "payments": [
+        {
+          "id": "pay_1789285507810_7p7w",
+          "order_id": "ord_1789285505318_k2h24",
+          "provider": "CASHFREE",
+          "provider_order_id": "ELR_2026_000001_1789285505319",
+          "provider_payment_id": "cf_pay_sim_1789285507810",
+          "amount": 1999,
+          "currency": "INR",
+          "status": "PAID",
+          "payment_method": "UPI / NetBanking (Sandbox Simulated)",
+          "payment_response": {
+            "simulated": true,
+            "status": "PAID"
+          },
+          "created_at": "2026-09-13T07:45:07.810Z",
+          "updated_at": "2026-09-13T07:45:07.810Z"
+        }
+      ],
+      "shipments": [
+        {
+          "id": "ship_1789285512997_2hsz",
+          "order_id": "ord_1789285505318_k2h24",
+          "shiprocket_order_id": "sr_ord_1789285512997",
+          "shipment_id": "sr_ship_1789285512997",
+          "awb_code": "SR-BD-9177547",
+          "courier_name": "BlueDart Express Air",
+          "tracking_url": "https://shiprocket.co/tracking/SR-BD-9177547",
+          "status": "READY_TO_SHIP",
+          "pickup_status": "SCHEDULED",
+          "delivery_status": "IN_TRANSIT",
+          "estimated_delivery_date": "2026-09-16T07:45:12.997Z",
+          "created_at": "2026-09-13T07:45:12.997Z",
+          "updated_at": "2026-09-13T07:45:12.997Z"
+        }
+      ],
+      "history": [
+        {
+          "id": "hist_1789285505318",
+          "order_id": "ord_1789285505318_k2h24",
+          "status": "PENDING",
+          "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+          "created_at": "2026-09-13T07:45:05.318Z"
+        },
+        {
+          "id": "hist_1789285507810",
+          "order_id": "ord_1789285505318_k2h24",
+          "status": "CONFIRMED",
+          "notes": "Payment confirmed via Cashfree. Ref: cf_pay_sim_1789285507810",
+          "created_at": "2026-09-13T07:45:07.810Z"
+        },
+        {
+          "id": "hist_1789285512997",
+          "order_id": "ord_1789285505318_k2h24",
+          "status": "PROCESSING",
+          "notes": "Shipment assigned via BlueDart Express Air. AWB: SR-BD-9177547",
+          "created_at": "2026-09-13T07:45:12.997Z"
+        }
+      ],
+      "cashfree_order_id": "ELR_2026_000001_1789285505319"
+    }
+  ],
+  "order_items": [
+    {
+      "id": "item_1789285505318_qh07",
+      "order_id": "ord_1789285505318_k2h24",
+      "product_id": "elora-noir",
+      "product_name": "NOIR",
+      "size_ml": "100ml",
+      "sku": "ELR-NOI-100ML",
+      "quantity": 1,
+      "unit_price": 1999,
+      "total": 1999,
+      "created_at": "2026-09-13T07:45:05.318Z"
+    },
+    {
+      "id": "item_1789285864930_uoik",
+      "order_id": "ord_1789285864930_h6m5r",
+      "product_id": "elora-noir",
+      "product_name": "NOIR",
+      "size_ml": "100ml",
+      "sku": "ELR-NOI-100ML",
+      "quantity": 1,
+      "unit_price": 1999,
+      "total": 1999,
+      "created_at": "2026-09-13T07:51:04.931Z"
+    },
+    {
+      "id": "item_1789285874586_go16",
+      "order_id": "ord_1789285874586_o9ajb",
+      "product_id": "elora-aura",
+      "product_name": "AURA",
+      "size_ml": "100ml",
+      "sku": "ELR-AUR-100ML",
+      "quantity": 1,
+      "unit_price": 1499,
+      "total": 1499,
+      "created_at": "2026-09-13T07:51:14.586Z"
+    },
+    {
+      "id": "item_1789286261461_dei1",
+      "order_id": "ord_1789286261461_x96eq",
+      "product_id": "elora-noir",
+      "product_name": "NOIR",
+      "size_ml": "100ml",
+      "sku": "ELR-NOI-100ML",
+      "quantity": 1,
+      "unit_price": 1999,
+      "total": 1999,
+      "created_at": "2026-09-13T07:57:41.461Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_1789285507810_7p7w",
+      "order_id": "ord_1789285505318_k2h24",
+      "provider": "CASHFREE",
+      "provider_order_id": "ELR_2026_000001_1789285505319",
+      "provider_payment_id": "cf_pay_sim_1789285507810",
+      "amount": 1999,
+      "currency": "INR",
+      "status": "PAID",
+      "payment_method": "UPI / NetBanking (Sandbox Simulated)",
+      "payment_response": {
+        "simulated": true,
+        "status": "PAID"
+      },
+      "created_at": "2026-09-13T07:45:07.810Z",
+      "updated_at": "2026-09-13T07:45:07.810Z"
+    },
+    {
+      "id": "pay_1789285866873_xrou",
+      "order_id": "ord_1789285864930_h6m5r",
+      "provider": "CASHFREE",
+      "provider_order_id": "ELR_2026_000002_1789285864931",
+      "provider_payment_id": "cf_pay_sim_1789285866872",
+      "amount": 1999,
+      "currency": "INR",
+      "status": "PAID",
+      "payment_method": "UPI / NetBanking (Sandbox Simulated)",
+      "payment_response": {
+        "simulated": true,
+        "status": "PAID"
+      },
+      "created_at": "2026-09-13T07:51:06.873Z",
+      "updated_at": "2026-09-13T07:51:06.873Z"
+    },
+    {
+      "id": "pay_1789286261487_9zhp",
+      "order_id": "ord_1789286261461_x96eq",
+      "provider": "CASHFREE",
+      "provider_order_id": "ELR_2026_000004_1789286261461",
+      "provider_payment_id": "cf_pay_sim_1789286261486",
+      "amount": 1999,
+      "currency": "INR",
+      "status": "PAID",
+      "payment_method": "UPI / NetBanking (Sandbox Simulated)",
+      "payment_response": {
+        "simulated": true,
+        "status": "PAID"
+      },
+      "created_at": "2026-09-13T07:57:41.487Z",
+      "updated_at": "2026-09-13T07:57:41.487Z"
+    }
+  ],
+  "shipments": [
+    {
+      "id": "ship_1789285512997_2hsz",
+      "order_id": "ord_1789285505318_k2h24",
+      "shiprocket_order_id": "sr_ord_1789285512997",
+      "shipment_id": "sr_ship_1789285512997",
+      "awb_code": "SR-BD-9177547",
+      "courier_name": "BlueDart Express Air",
+      "tracking_url": "https://shiprocket.co/tracking/SR-BD-9177547",
+      "status": "READY_TO_SHIP",
+      "pickup_status": "SCHEDULED",
+      "delivery_status": "IN_TRANSIT",
+      "estimated_delivery_date": "2026-09-16T07:45:12.997Z",
+      "created_at": "2026-09-13T07:45:12.997Z",
+      "updated_at": "2026-09-13T07:45:12.997Z"
+    }
+  ],
+  "order_status_history": [
+    {
+      "id": "hist_1789285505318",
+      "order_id": "ord_1789285505318_k2h24",
+      "status": "PENDING",
+      "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+      "created_at": "2026-09-13T07:45:05.318Z"
+    },
+    {
+      "id": "hist_1789285507810",
+      "order_id": "ord_1789285505318_k2h24",
+      "status": "CONFIRMED",
+      "notes": "Payment confirmed via Cashfree. Ref: cf_pay_sim_1789285507810",
+      "created_at": "2026-09-13T07:45:07.810Z"
+    },
+    {
+      "id": "hist_1789285512997",
+      "order_id": "ord_1789285505318_k2h24",
+      "status": "PROCESSING",
+      "notes": "Shipment assigned via BlueDart Express Air. AWB: SR-BD-9177547",
+      "created_at": "2026-09-13T07:45:12.997Z"
+    },
+    {
+      "id": "hist_1789285864931",
+      "order_id": "ord_1789285864930_h6m5r",
+      "status": "PENDING",
+      "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+      "created_at": "2026-09-13T07:51:04.931Z"
+    },
+    {
+      "id": "hist_1789285866873",
+      "order_id": "ord_1789285864930_h6m5r",
+      "status": "CONFIRMED",
+      "notes": "Payment confirmed via Cashfree. Ref: cf_pay_sim_1789285866872",
+      "created_at": "2026-09-13T07:51:06.873Z"
+    },
+    {
+      "id": "hist_1789285874586",
+      "order_id": "ord_1789285874586_o9ajb",
+      "status": "PENDING",
+      "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+      "created_at": "2026-09-13T07:51:14.586Z"
+    },
+    {
+      "id": "hist_1789286261461",
+      "order_id": "ord_1789286261461_x96eq",
+      "status": "PENDING",
+      "notes": "Order initiated via guest checkout. Awaiting payment authorization.",
+      "created_at": "2026-09-13T07:57:41.461Z"
+    },
+    {
+      "id": "hist_1789286261487",
+      "order_id": "ord_1789286261461_x96eq",
+      "status": "CONFIRMED",
+      "notes": "Payment confirmed via Cashfree. Ref: cf_pay_sim_1789286261486",
+      "created_at": "2026-09-13T07:57:41.487Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "elora-aura",
+      "slug": "aura",
+      "name": "AURA",
+      "subtitle": "100ML EAU DE PARFUM",
+      "category": "Fresh · Floral · Musky",
+      "description": "A luminous aura of Mediterranean morning dew, Italian citrus groves, and white silk petals.",
+      "is_published": true,
+      "is_featured": true,
+      "notes": {
+        "top": [
+          "Calabrian Bergamot",
+          "Dewy Mandarin",
+          "Pink Peppercorn"
+        ],
+        "heart": [
+          "French Jasmine Sambac",
+          "Orange Blossom",
+          "Violet Petals"
+        ],
+        "base": [
+          "White Velvet Musk",
+          "Atlas Cedarwood",
+          "Golden Amber"
+        ]
+      },
+      "variants": [
+        {
+          "id": "aura-30",
+          "size_ml": "30ml",
+          "sku": "ELR-AUR-30ML",
+          "price": 999,
+          "compare_at_price": 1299,
+          "stock_quantity": 45,
+          "sold_quantity": 12,
+          "low_stock_threshold": 10
+        },
+        {
+          "id": "aura-50",
+          "size_ml": "50ml",
+          "sku": "ELR-AUR-50ML",
+          "price": 1299,
+          "compare_at_price": 1599,
+          "stock_quantity": 38,
+          "sold_quantity": 24,
+          "low_stock_threshold": 10
+        },
+        {
+          "id": "aura-100",
+          "size_ml": "100ml",
+          "sku": "ELR-AUR-100ML",
+          "price": 1499,
+          "compare_at_price": 1999,
+          "stock_quantity": 120,
+          "sold_quantity": 86,
+          "low_stock_threshold": 15
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-13T07:44:46.669Z"
+    },
+    {
+      "id": "elora-noir",
+      "slug": "noir",
+      "name": "NOIR",
+      "subtitle": "100ML EAU DE PARFUM",
+      "category": "Warm · Woody · Amber",
+      "description": "Sensual darkness steeped in warm woods, crushed cardamom, and incandescent amber.",
+      "is_published": true,
+      "is_featured": true,
+      "notes": {
+        "top": [
+          "Crushed Cardamom",
+          "Smoked Black Tea",
+          "Saffron Threads"
+        ],
+        "heart": [
+          "Bourbon Vanilla Pod",
+          "Haitian Vetiver",
+          "Smoked Labdanum"
+        ],
+        "base": [
+          "Mysore Sandalwood",
+          "Dark Ambergris",
+          "Roasted Tonka Bean"
+        ]
+      },
+      "variants": [
+        {
+          "id": "noir-30",
+          "size_ml": "30ml",
+          "sku": "ELR-NOI-30ML",
+          "price": 1299,
+          "compare_at_price": 1599,
+          "stock_quantity": 30,
+          "sold_quantity": 18,
+          "low_stock_threshold": 10
+        },
+        {
+          "id": "noir-50",
+          "size_ml": "50ml",
+          "sku": "ELR-NOI-50ML",
+          "price": 1699,
+          "compare_at_price": 1999,
+          "stock_quantity": 42,
+          "sold_quantity": 35,
+          "low_stock_threshold": 10
+        },
+        {
+          "id": "noir-100",
+          "size_ml": "100ml",
+          "sku": "ELR-NOI-100ML",
+          "price": 1999,
+          "compare_at_price": 2499,
+          "stock_quantity": 92,
+          "sold_quantity": 117,
+          "low_stock_threshold": 15
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-13T07:44:46.669Z"
+    },
+    {
+      "id": "elora-eclat",
+      "slug": "eclat",
+      "name": "ÉCLAT",
+      "subtitle": "100ML EAU DE PARFUM",
+      "category": "Fresh · Citrus · Aromatic",
+      "description": "Sunlit sea spray meeting the verdant cliffside orchards of the French Riviera.",
+      "is_published": true,
+      "is_featured": false,
+      "notes": {
+        "top": [
+          "Sunlit Amalfi Lemon",
+          "Green Neroli",
+          "Crushed Wild Mint"
+        ],
+        "heart": [
+          "Mediterranean Sea Breeze",
+          "Clary Sage",
+          "Petitgrain Citronnier"
+        ],
+        "base": [
+          "Clean Driftwood",
+          "White Amber",
+          "Mineral Vetiver"
+        ]
+      },
+      "variants": [
+        {
+          "id": "eclat-30",
+          "size_ml": "30ml",
+          "sku": "ELR-ECL-30ML",
+          "price": 999,
+          "compare_at_price": 1299,
+          "stock_quantity": 50,
+          "sold_quantity": 8,
+          "low_stock_threshold": 10
+        },
+        {
+          "id": "eclat-50",
+          "size_ml": "50ml",
+          "sku": "ELR-ECL-50ML",
+          "price": 1299,
+          "compare_at_price": 1599,
+          "stock_quantity": 40,
+          "sold_quantity": 19,
+          "low_stock_threshold": 10
+        },
+        {
+          "id": "eclat-100",
+          "size_ml": "100ml",
+          "sku": "ELR-ECL-100ML",
+          "price": 1499,
+          "compare_at_price": 1899,
+          "melon_low": false,
+          "stock_quantity": 110,
+          "sold_quantity": 62,
+          "low_stock_threshold": 15
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-13T07:44:46.669Z"
+    },
+    {
+      "id": "elora-oud-elite",
+      "slug": "oud-elite",
+      "name": "OUD ÉLITE",
+      "subtitle": "100ML EAU DE PARFUM",
+      "category": "Oud · Smoky · Spicy",
+      "description": "The sovereign crown of haute perfumery — ancient Cambodian agarwood, Damascus rose, and birch smoke.",
+      "is_published": true,
+      "is_featured": true,
+      "notes": {
+        "top": [
+          "Wild Green Cardamom",
+          "Smoked Nutmeg",
+          "Rare Zanzibar Clove"
+        ],
+        "heart": [
+          "Precious Cambodian Agarwood (Oud)",
+          "Damascus Rose Otto",
+          "Birch Smoke"
+        ],
+        "base": [
+          "Burnished Leather",
+          "Sumatran Benzoin",
+          "Patchouli Heart"
+        ]
+      },
+      "variants": [
+        {
+          "id": "oud-30",
+          "size_ml": "30ml",
+          "sku": "ELR-OUD-30ML",
+          "price": 1499,
+          "compare_at_price": 1899,
+          "stock_quantity": 25,
+          "sold_quantity": 15,
+          "low_stock_threshold": 8
+        },
+        {
+          "id": "oud-50",
+          "size_ml": "50ml",
+          "sku": "ELR-OUD-50ML",
+          "price": 1999,
+          "compare_at_price": 2499,
+          "stock_quantity": 30,
+          "sold_quantity": 22,
+          "low_stock_threshold": 8
+        },
+        {
+          "id": "oud-100",
+          "size_ml": "100ml",
+          "sku": "ELR-OUD-100ML",
+          "price": 2499,
+          "compare_at_price": 2999,
+          "stock_quantity": 75,
+          "sold_quantity": 58,
+          "low_stock_threshold": 10
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-13T07:44:46.669Z"
+    },
+    {
+      "id": "elora-signature-set",
+      "slug": "elora-signature-set",
+      "name": "ELORA SIGNATURE SET",
+      "subtitle": "DISCOVERY TRIO (3 × 15ML)",
+      "category": "Haute Parfumerie Coffret",
+      "description": "Three 15ml flacons of Aura, Noir, and Éclat nestled in an archival lacquered coffret.",
+      "is_published": true,
+      "is_featured": true,
+      "notes": {
+        "top": [
+          "Calabrian Bergamot",
+          "Crushed Cardamom",
+          "Amalfi Lemon"
+        ],
+        "heart": [
+          "Jasmine Sambac",
+          "Bourbon Vanilla Pod",
+          "Sea Salt Accord"
+        ],
+        "base": [
+          "Velvet Musks",
+          "Aged Sandalwood",
+          "White Amber"
+        ]
+      },
+      "variants": [
+        {
+          "id": "trio-15",
+          "size_ml": "3x15ml",
+          "sku": "ELR-TRIO-45ML",
+          "price": 2999,
+          "compare_at_price": 3699,
+          "stock_quantity": 60,
+          "sold_quantity": 42,
+          "low_stock_threshold": 10
+        }
+      ],
+      "created_at": "2026-01-01T00:00:00.000Z",
+      "updated_at": "2026-09-13T07:44:46.669Z"
+    }
+  ],
+  "order_counter": 4
+}

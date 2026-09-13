@@ -1,0 +1,6 @@
+{
+  "name": "ELORA PARFUM",
+  "description": "Luxury fragrances crafted for moments that deserve to linger. Discover the signature haute parfumerie collection by Elora Parfum.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

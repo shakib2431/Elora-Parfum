@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  
+  /* Core Haute Parfumerie Palette */
+  --color-warm-ivory: #F4F0E8;
+  --color-champagne: #D8C5A5;
+  --color-deep-espresso: #191512;
+  --color-antique-gold: #B99A62;
+
+  /* Deep Espresso Shades */
+  --color-espresso: #191512;
+  --color-espresso-surface: #221D19;
+  --color-espresso-card: #27221E;
+  --color-espresso-elevated: #2E2722;
+  --color-espresso-border: #3B332B;
+  --color-espresso-subtle: #483E34;
+
+  /* Warm Ivory Shades */
+  --color-ivory: #F4F0E8;
+  --color-ivory-light: #FAF8F5;
+  --color-ivory-soft: #EDE8DE;
+  --color-ivory-muted: #DDD5C7;
+
+  /* Champagne & Gold Accents */
+  --color-gold: #B99A62;
+  --color-gold-light: #CEB482;
+  --color-gold-dark: #987B45;
+  --color-champagne-light: #E6D8BF;
+  --color-champagne-muted: #BFAFA0;
+
+  /* Tactile Editorial Neutrals */
+  --color-parchment: #F4F0E8;
+  --color-stone: #241F1B;
+  --color-charcoal: #191512;
+  --color-muted-taupe: #A89D8F;
+  --color-charcoal-muted: #D8C5A5;
+  --color-warm-grey: #3B332B;
+  --color-dark-noir: #191512;
+
+  /* Fluid Typography Scale across 360px -> 1440px viewport */
+  --text-fluid-hero: clamp(2.5rem, 1.833rem + 2.963vw, 4.5rem);
+  --text-fluid-h1: clamp(2.125rem, 1.667rem + 2.037vw, 3.5rem);
+  --text-fluid-h2: clamp(1.625rem, 1.292rem + 1.481vw, 2.625rem);
+  --text-fluid-h3: clamp(1.375rem, 1.167rem + 0.926vw, 2rem);
+  --text-fluid-h4: clamp(1.125rem, 1rem + 0.556vw, 1.5rem);
+  --text-fluid-h5: clamp(1rem, 0.917rem + 0.37vw, 1.25rem);
+  --text-fluid-h6: clamp(0.875rem, 0.8125rem + 0.278vw, 1.0625rem);
+}
+
+:root {
+  /* Editorial Luxury Color Scheme */
+  --color-warm-ivory: #F4F0E8;
+  --color-champagne: #D8C5A5;
+  --color-deep-espresso: #191512;
+  --color-antique-gold: #B99A62;
+
+  --warm-ivory: #F4F0E8;
+  --champagne: #D8C5A5;
+  --deep-espresso: #191512;
+  --antique-gold: #B99A62;
+
+  --bg-primary: #191512;
+  --bg-secondary: #221D19;
+  --bg-card: #27221E;
+  --bg-card-hover: #302A24;
+  --bg-stage: #201B17;
+  --text-primary: #F4F0E8;
+  --text-secondary: #D8C5A5;
+  --text-muted: #A89D8F;
+  --border-subtle: #3B332B;
+  --border-gold: rgba(185, 154, 98, 0.28);
+  --accent-gold: #B99A62;
+  --dark-noir: #191512;
+
+  /* Fluid Typography Scale (Min: 360px viewport / 22.5rem, Max: 1440px viewport / 90rem) */
+  --fluid-hero: clamp(2.5rem, 1.833rem + 2.963vw, 4.5rem);
+  --fluid-h1: clamp(2.125rem, 1.667rem + 2.037vw, 3.5rem);
+  --fluid-h2: clamp(1.625rem, 1.292rem + 1.481vw, 2.625rem);
+  --fluid-h3: clamp(1.375rem, 1.167rem + 0.926vw, 2rem);
+  --fluid-h4: clamp(1.125rem, 1rem + 0.556vw, 1.5rem);
+  --fluid-h5: clamp(1rem, 0.917rem + 0.37vw, 1.25rem);
+  --fluid-h6: clamp(0.875rem, 0.8125rem + 0.278vw, 1.0625rem);
+}
+
+/* Base Fluid Headings */
+@layer base {
+  body {
+    background-color: #191512;
+    color: #F4F0E8;
+    letter-spacing: 0.015em;
+  }
+  h1 {
+    font-size: var(--fluid-h1);
+    line-height: 1.14;
+    color: #F4F0E8;
+  }
+  h2 {
+    font-size: var(--fluid-h2);
+    line-height: 1.2;
+    color: #F4F0E8;
+  }
+  h3 {
+    font-size: var(--fluid-h3);
+    line-height: 1.25;
+    color: #F4F0E8;
+  }
+  h4 {
+    font-size: var(--fluid-h4);
+    line-height: 1.3;
+    color: #F4F0E8;
+  }
+  h5 {
+    font-size: var(--fluid-h5);
+    line-height: 1.35;
+    color: #F4F0E8;
+  }
+  h6 {
+    font-size: var(--fluid-h6);
+    line-height: 1.4;
+    color: #F4F0E8;
+  }
+}
+
+/* Fluid Typography Utility Classes (CSS clamp() 360px - 1440px) */
+.text-fluid-hero {
+  font-size: var(--fluid-hero);
+  line-height: 1.08;
+}
+
+.text-fluid-h1 {
+  font-size: var(--fluid-h1);
+  line-height: 1.14;
+}
+
+.text-fluid-h2 {
+  font-size: var(--fluid-h2);
+  line-height: 1.2;
+}
+
+.text-fluid-h3 {
+  font-size: var(--fluid-h3);
+  line-height: 1.25;
+}
+
+.text-fluid-h4 {
+  font-size: var(--fluid-h4);
+  line-height: 1.3;
+}
+
+.text-fluid-h5 {
+  font-size: var(--fluid-h5);
+  line-height: 1.35;
+}
+
+.text-fluid-h6 {
+  font-size: var(--fluid-h6);
+  line-height: 1.4;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+}
+
+/* Subtle luxury warm scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #191512;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B332B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B99A62;
+}
+
+/* Hide scrollbar for clean carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Editorial studio shadow & pedestal lighting for flacons */
+.flacon-stage-light {
+  background: radial-gradient(circle at 50% 45%, #2D2620 0%, #221D19 55%, #191512 100%);
+}
+
+.flacon-shadow-warm {
+  filter: drop-shadow(0 20px 30px rgba(15, 12, 10, 0.8)) drop-shadow(0 8px 14px rgba(185, 154, 98, 0.15));
+}
+
+.flacon-shadow-lg {
+  filter: drop-shadow(0 30px 48px rgba(15, 12, 10, 0.9)) drop-shadow(0 12px 20px rgba(185, 154, 98, 0.18));
+}
+
+/* Refined tactile luxury button utilities */
+.btn-primary {
+  background-color: #B99A62;
+  color: #191512;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-primary:hover {
+  background-color: #D8C5A5;
+  color: #191512;
+  box-shadow: 0 0 20px rgba(185, 154, 98, 0.35);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #F4F0E8;
+  border: 1px solid #3B332B;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-secondary:hover {
+  background-color: #241F1B;
+  border-color: #B99A62;
+  color: #D8C5A5;
+}
+
+/* Tactile espresso hairline borders */
+.hairline-border {
+  border: 1px solid #3B332B;
+}
+.hairline-b {
+  border-bottom: 1px solid #3B332B;
+}
+.hairline-t {
+  border-top: 1px solid #3B332B;
+}
